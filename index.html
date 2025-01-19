@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container  w-200">
+    <centear>
+        <h1>Lottery Pool Registration </h1>
+        <form id="myForm" >
+            <div class="mb-3">
+                        <label for="name">
+                            <strong>Name</strong>
+                        </label>
+                        <input type="text" id=name placeholder="Enter your name" 
+                        autoComplete="off"
+                        name="name"
+                        class="form-control rounded-0 color-red" required />
+                    </div>
+        
+                   
+                    <div class="mb-3">
+                        <label for="id">
+                            <strong>Registration ID<sup>Registration ID Generated Automatically</sup></strong>
+                        </label>
+                        <input id="id" type="text" placeholder="Enter your phone number" required
+                        autoComplete="off"
+                        name="id"
+                        class="form-control rounded-0"  />
+                    </div>
+                    <div class="mb-3">
+                        <label for="name">
+                            <strong>Amount</strong>
+                        </label>
+                        <input type="number" id="amount" placeholder="Enter amount to play" required
+                        autoComplete="off"
+                        name="amount"
+                        class="form-control rounded-0" />
+                    </div>
+                  
+                  </form>
+                  <button type="submit" onClick="submit()" class="btn btn-success w-100 rounded-0">Register</button> </br></br>
+                  <p id="msg">Status</p><br>
+
+            <p id="registeredList">Participant List</p>
+            <button type="button" onClick="participantList()" class="btn btn-success w-100 rounded-0">ParticipantList</button><br><br>
+
+            <button type="button" onClick="winner()" class="btn btn-success w-100 rounded-0">Winner</button> 
+
+            <p id="first"></p>
+            <p id="second"></p>
+            <p id="third"></p>
+            
+     </center>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
+    
+         
+        
+         <!-- <!DOCTYPE html>
+         <html lang="en">
+         <head>
+             <meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>Document</title>
+             <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+         </head>
+         <body>
+             <div class="container w-200">
+                 <center>
+                     <h1>Lottery Pool Registration</h1>
+                     <form id="form">
+                         <div class="mb-3">
+                             <label for="name">
+                                 <strong>Name</strong>
+                             </label>
+                             <input type="text" id="name" placeholder="Enter your name" 
+                                    autoComplete="off" name="name" class="form-control rounded-0" required>
+                         </div>
+                         <div class="mb-3">
+                             <label for="id">
+                                 <strong>Registration ID<sup>Registration ID Generated Automatically</sup></strong>
+                             </label>
+                             <input id="id" type="text" placeholder="Enter your phone number" required
+                                    autoComplete="off" name="id" class="form-control rounded-0">
+                         </div>
+                         <div class="mb-3">
+                             <label for="amount">
+                                 <strong>Amount</strong>
+                             </label>
+                             <input type="number" id="amount" placeholder="Enter amount to play" required
+                                    autoComplete="off" name="amount" class="form-control rounded-0">
+                         </div>
+                         <button type="submit" class="btn btn-success w-100 rounded-0">Register</button>
+                     </form>
+                     <p id="msg">Status</p>
+                     <button type="button" onClick="participantList()" class="btn btn-success w-100 rounded-0">Participant List</button><br><br>
+                     <button type="button" onClick="winner()" class="btn btn-success w-100 rounded-0">Winner</button>
+                     <p id="first"></p>
+                     <p id="second"></p>
+                     <p id="third"></p>
+                 </center>
+             </div>
+         </body>
+         <script src="script.js"></script>
+         </html>
+          -->
